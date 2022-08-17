@@ -1,27 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <title>Web AR</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link rel="stylesheet" href="demo-styles.css">
-    
-    <!-- The following libraries and polyfills are recommended to maximize browser support -->
-    <!-- NOTE: you must adjust the paths as appropriate for your project -->
-    
-    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
-    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
-
+    <script src="https://github.com/lightlessdays/web-ar/blob/main/focus.js" defer></script>
   </head> 
 <body>
   <div id="card">
-    <!-- All you need to put beautiful, interactive 3D content on your site. You can replace it with your own models. -->
-    <!--This is the main model which will run on android as well as windows. It must have .GLB extension.-->
-    <model-viewer src="poly.glb"
+    <model-viewer src="Astronaut.glb"
                   ios-src="Astronaut.usdz"
-                  poster="https://i.pinimg.com/originals/a2/dc/96/a2dc9668f2cf170fe3efeb263128b0e7.gif"
+                  poster="https://raw.githubusercontent.com/lightlessdays/web-ar/main/loading_screen.gif"
                   alt="A 3D model"
                   shadow-intensity="1"
                   camera-controls
@@ -30,32 +20,14 @@
     <section class="attribution">
       <span>
         <h1>Web AR Viewer</h1>
-        <!--This is the name attribution. You can replace it with your own name.-->
-        <span>Visit my <a href="https://linkedin.com/in/dhruv-badaya" target="_blank">Linkedin</a></span>
+        <span>To view the source code, <a href="https://github.com/lightlessdays/web-ar" target="_blank">click here.</a></span>
       </span>
-      <a class="cc" href="https://creativecommons.org/licenses/by/2.0/" target="_blank">
+      <a class="cc" href="https://github.com/lightlessdays/web-ar/blob/main/LICENSE.md" target="_blank">
         <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg">
         <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg">
       </a>
     </section>
-    
   </div>
-  
-  
-  <!--
-<footer>
-    <span>This page is a basic demo of the <a href="https://github.com/GoogleWebComponents/model-viewer" target="_blank">&lt;model-viewer&gt;</a> web component.</span>
-    <span>It makes displaying 3D and AR content on the web easy ✌️</span>
-    <a href="https://glitch.com/edit/#!/remix/model-viewer">
-      <img src="https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix%402x.png?1513093958726" alt="remix button" aria-label="remix" height="33">
-    </a>
-  </footer>
--->
-  
-  
-  <!-- 💁 Include both scripts below to support all browsers! -->
-
-  <!-- Loads <model-viewer> for modern browsers: -->
   <script type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
   </script>
